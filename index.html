@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>GisDay 2020</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides" data-background-color="#fff">
+			<section>
+				<h1>Visual Analytics</h1>
+				<p>
+					<b>Visual Analytics una forma de ver la ciudad</b>
+				</p>
+				<p>IDECA GisDay 2020</p>
+				<p>
+					<a href="https://github.com/fabianheredia" target="_blank">Fabian Heredia</a>
+				</p>
+				<a href="https://github.com/fabianheredia" target="_blank" class="github">@fabianheredia</a>
+
+				<hr>
+
+				<footer class="footer">Basado en el<a href="http://johnguerra.co/classes/" target="_blank">
+						curso de VA</a> de <a href="https://twitter.com/duto_guerra?lang=es" target="_blank">John A
+						Guerra Gómez</a>
+				</footer>
+			</section>
+			<section>
+
+				<section>
+					<h3> ¿Cuál visualización es mejor?</h3>
+					<iframe src="examples/vega-lite/vega_lite.html" frameborder="0" width="784px"
+						height="227px"></iframe>
+					<div>
+						<img src="img/votantes_por_depto_mapa.png" alt="mapa" style="width: 200px; border: none;">
+						<img src="img/votantes_por_depto_3d.png" alt="mapa" style="width: 500px; border: none;">
+					</div>
+
+				</section>
+				<section>
+					<h3>Interrogantes</h3>
+					<p class="fragment fade-in">¿De qué depende?</p>
+					<p class="fragment fade-in">¿Cómo evaluarlo?</p>
+					<p class="fragment fade-in">¿Existe un marco de referencia?</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>
+						DEFINICIÓN DE VISUALIZACIÓN DE INFORMACIÓN (VIS)</h3>
+				</section>
+				<section>
+					<p>Los <span class="fragment highlight-current-blue">sistemas de visualización basados en
+							computador</span> proporcionan representaciones visuales de <span
+							class="fragment highlight-blue"><b>conjuntos
+								de datos</b></span> diseñados para ayudar a las <span
+							class="fragment highlight-blue"><b>personas</b></span> a
+						realizar <span class="fragment highlight-blue"><b>tareas</b></span> de manera más efectiva.
+					</p>
+				</section>
+				<section>
+					<h3>Insight</h3>
+					<ul>
+						<li>Entendimiento profundo</li>
+						<li>Significativo</li>
+						<li>No obvio</li>
+						<li>Accionable</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Tres requerimientos</h3>
+
+					<div class="flex">
+						<div class="third fragment"><strong>Usuarios</strong></div>
+						<div class="third fragment"><strong>Datos</strong></div>
+						<div class="third fragment"><strong>Tareas</strong></div>
+					</div><br>
+
+					<div class="fragment">Una buena visualización permite a los <strong>usuarios</strong> completar
+						<strong>tareas</strong> de forma eficaz con los <strong>datos</strong>.</div>
+				</section>
+				<section>
+					<h3>Cuando no usar una visualización</h3>
+
+					<div class="fragment">No necesita visualización cuando existe una solución completamente automática
+						y es confiable</div>
+				</section>
+				<section>
+					<h3>Que me permite hacer una buena visualización</h3>
+					<ul class="small">
+						<li class="fragment">Uso a largo plazo para usuarios finales (por ejemplo, análisis exploratorio
+							de datos científicos)</li>
+						<li class="fragment">Presentación de resultados conocidos</li>
+						<li class="fragment">Trampolín para comprender mejor los requisitos antes de desarrollar modelos
+						</li>
+						<li class="fragment">Ayuda a los desarrolladores de soluciones automáticas a refinar / depurar,
+							determinar parámetros</li>
+						<li class="fragment">Ayuda a los usuarios finales de las soluciones automáticas a verificar y
+							generar confianza</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Un ejercicio!!</h3><span class="anscombeTable">
+						<img src="img/tabla.png" alt="mapa" style="width: 400px; border: none;">
+						<img class="fragment" src="img/tabla2.png" alt="mapa" style="width: 200px; border: none;">
+				</section>
+				<section>
+					<h3>El resultado!</h3>
+					<div>
+						<img src="img/grafico1.png" style="width: 600px; border: none;">
+					</div>
+				</section>
+				<section>
+					<h3>Mas ejemplos</h3><img src="img/grafico2.png" style="width: 400px; border: none;">
+					<a
+						href="https://dabblingwithdata.wordpress.com/2017/05/03/the-datasaurus-a-monstrous-anscombe-for-the-21st-century/">fuente</a>
+				</section>
+				<section>
+					<h3>Datasaurus!</h3><img src="img/grafico3.png" class="demo"><a
+						href="https://dabblingwithdata.wordpress.com/2017/05/03/the-datasaurus-a-monstrous-anscombe-for-the-21st-century/"
+						class="tiny">https://dabblingwithdata.wordpress.com/2017/05/03/the-datasaurus-a-monstrous-anscombe-for-the-21st-century/</a>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Visual Analytics</h1>
+					<div>¿Cómo hacen las personas la ciencia de datos?</div>
+				</section>
+
+				<section
+					data-background-image="https://johnguerra.co/lectures/MIDS_W209_Information_Visualization/shared_images/DS_to_VA_01.svg"
+					alt="Data Science to Visual Analytics" data-background-size="contain"></section>
+				<section
+					data-background-image="https://johnguerra.co/lectures/MIDS_W209_Information_Visualization/shared_images/DS_to_VA_02.svg"
+					alt="Data Science to Visual Analytics" data-background-size="contain"></section>
+				<section
+					data-background-image="https://johnguerra.co/lectures/MIDS_W209_Information_Visualization/shared_images/DS_to_VA_03.svg"
+					alt="Data Science to Visual Analytics" data-background-size="contain"></section>
+				<section
+					data-background-image="https://johnguerra.co/lectures/MIDS_W209_Information_Visualization/shared_images/DS_to_VA_04.svg"
+					alt="Data Science to Visual Analytics" data-background-size="contain"></section>
+				<section
+					data-background-image="https://johnguerra.co/lectures/MIDS_W209_Information_Visualization/shared_images/DS_to_VA_05.svg"
+					alt="Data Science to Visual Analytics" data-background-size="contain"></section>
+				<section
+					data-background-image="https://johnguerra.co/lectures/MIDS_W209_Information_Visualization/shared_images/DS_to_VA_06.svg"
+					alt="Data Science to Visual Analytics" data-background-size="contain"></section>
+				<section>
+					<table id="comparisonTable" style=" font-size: 25px;">
+						<tr>
+							<td class="fragment">
+								<h2>Tradicional</h2>
+								<ul>
+									<li>Consulta de patrones conocidos</li>
+									<li>Mostrar resultados utilizando técnicas tradicionales</li>
+								</ul><br><strong>Pros:</strong><br>
+								<ul>
+									<li>Muchas soluciones</li>
+									<li>Más fácil de implementar</li>
+								</ul><br><strong>Cons:</strong><br>
+								<ul>
+									<li>No puedo buscar lo inesperado</li>
+								</ul>
+							</td>
+							<td class="fragment">
+								<h2>Data Mining/ML</h2>
+								<ul>
+									<li>Basado en estadísticas</li>
+									<li>Enfoque de caja negra</li>
+									<li>Valores atípicos de salida y correlaciones</li>
+									<li> Humano fuera del circuito</li>
+								</ul><br><strong>Pros:</strong><br>
+								<ul>
+									<li> Escalable</li>
+								</ul><br><strong>Cons:</strong>
+								<ul>
+									<li> Los analistas deben dar sentido a los resultados</li>
+									<li> Hace suposiciones sobre los datos</li>
+								</ul>
+							</td>
+							<td class="fragment">
+								<h2>InfoVis</h2>
+								<ul>
+									<li> Interfaces visuales interactivas</li>
+									<li> Humano dentro del circuito</li>
+								</ul><br><strong>Pros:</strong><br>
+								<ul>
+									<li> Espectro de visualización enorme</li>
+									<li> Los expertos decidieron qué buscar</li>
+									<li> Los expertos decidieron qué buscar</li>
+								</ul><br><strong>Cons</strong><br>
+								<ul>
+									<li>La escalabilidad puede ser un problema</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+			</section>
+			<section>
+				<section>
+					<img src="img/demo2.png" alt="mapa" style="width: 600px; border: none;">
+					http://saga.cundinamarca.gov.co/apps/covid/
+				</section>
+				<section>
+					<img src="img/demo1.png" alt="mapa" style="width: 600px; border: none;">
+					http://saludata.saludcapital.gov.co/osb/index.php/datos-de-salud/enfermedades-trasmisibles/covid19/
+				</section>
+
+			</section>
+			<section>
+				<section>
+					<h2 class="demo">What/Why/How</h2>
+
+					<div class="third"><img style="max-height:200px"
+							src="https://johnguerra.co/lectures/MIDS_W209_Information_Visualization/shared_images/what_why_how.png">
+					</div>
+					<div class="twothirds small line-compressed">
+						<ul>
+							<li class="fragment"><strong style="color:#ce4113">What</strong> is visualized?
+								<ul>
+									<li> abstraccion de los <strong>datos </strong></li>
+								</ul>
+							</li>
+							<li class="fragment"><strong style="color:#e8b32d">Why</strong> is the user looking
+								at it?
+								<ul>
+									<li> abstraction de las <strong>tareas</strong></li>
+								</ul>
+							</li>
+							<li class="fragment"><strong style="color:#6ada6f">How</strong> is visualized?
+								<ul>
+									<li> codificacion visual e interaccion de los <strong>modismos </strong></li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+				</section>
+				<section>
+					<h2 class="demo">Ejemplo 1</h2>
+					<ul style="font-size: 20px;">
+						<li>What: <strong><span class="fragment">Datos Geograficos</span></strong>.</li>
+						<li class="fragment"><strong>Why</strong>: presentar la informacion de referencia de la ciudad </li>
+						<li class="fragment"><strong>Why</strong>: encontrar informacion de interes e identificar su ubicacion</li>
+						<li class="fragment"><strong>Why</strong>: comparar imformacion geografica</li>
+						<li class="fragment"><strong>Why</strong>: identificar donde se estan realizando las obras de infraestructura de la ciudad</li>
+						<li class="fragment">Idiom: <strong><span class="fragment">Mapa</span></strong>.</li>
+						<ul class="fragment">
+							<li class="framgment">Marcas: puntos, lineas y poligonos </li>
+							<li class="framgment">Canales: Eje x, eje y para ubicar los elementos geograficos, color para clasificarlos</li>
+							<li class="framgment">interaccion: zoom, ventana emergente de la informacion</li>
+						</ul>
+						
+					</ul>
+				</section>
+				<section>
+					<img src="img/demo3.png" alt="mapa" style="width: 600px; border: none;">
+					https://mapas.bogota.gov.co/
+				</section>
+				
+				<section>
+					<h2 class="demo">Ejemplo 2</h2>
+					<ul>
+						<li>What: <strong><span class="fragment">Datos Geograficos y datos tabulares</span></strong>.</li>
+						<li class="fragment"><strong>Why</strong>: Las personas se mueven a los polos económicos? </li>
+						<li class="fragment"><strong>Why</strong>: Donde quedan los polos a los que las personas se mueven?</li>
+						<li class="fragment"><strong>Why</strong>: Las personas que se mueven a los polos en que medios de transporte lo hacen?</li>
+						<li class="fragment">Idiom: <strong><span class="fragment">??????????</span></strong>.</li>
+						<ul class="fragment">
+							<li class="framgment">Marcas: ???? </li>
+							<li class="framgment">Canales: ?????</li>
+							<li class="framgment">interaccion: ?????</li>
+						</ul>
+						
+					</ul>
+				</section>
+				<section>
+					<img src="img/demo4.png" alt="mapa" style="width: 600px; border: none;">
+					http://analiticaideca.catastrobogota.gov.co:8080/polosmovilidad/
+				
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<img src="img/mentor1.png" alt="mapa" style="width: 800px; border: none;">
+					
+				</section>
+				<section>
+					<img src="img/mentor2.png" alt="mapa" style="width: 800px; border: none;">
+					
+				</section>
+				<section>
+				<h1>Visual Analytics</h1>
+				<p>
+					<b>Visual Analytics una forma de ver la ciudad</b>
+				</p>
+				<p>IDECA GisDay 2020</p>
+				<p>
+					<a href="https://github.com/fabianheredia" target="_blank">Fabian Heredia</a>
+				</p>
+				<a href="https://github.com/fabianheredia" target="_blank" class="github">@fabianheredia</a>
+
+				<hr>
+
+				<footer class="footer">Basado en el<a href="http://johnguerra.co/classes/" target="_blank">
+						curso de VA</a> de <a href="https://twitter.com/duto_guerra?lang=es" target="_blank">John A
+						Guerra Gómez</a>
+				</footer>
+			</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			],
+			history: true,
+			showNotes: true,
+			hideAddressBar: false,
+			transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+		});
+	</script>
+</body>
+
+</html>
